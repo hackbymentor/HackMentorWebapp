@@ -1,0 +1,2 @@
+(function($){$(document).ready(function(){$('.typed-me').each(function(){var options={},strings=[];for(var key in this.dataset){if(key.substr(0,6)=="string"){var v=this.dataset[key].replace('&amp;','&');v=v.replace(/&quot;/g,'"');v=v.replace('&','&amp;');strings.push(v);}else{options[key]=parseInt(this.dataset[key]);}}
+options['strings']=strings;options['contentType']='html';$(this).typed(options);});});})(jQuery);
